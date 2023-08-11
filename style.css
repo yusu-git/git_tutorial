@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+    background-color: darkseagreen;
+    background-image: url(new05895.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top center;
+}
+h1{
+    color : #0bd;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+p{
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: bold;
+    padding: 50px;
+}
+
+th{
+    font-size: 130%;
+}
+h2{
+
+}
+img{
+    margin: 10px 50px 0px 100px; 
+    width: 600px;
+    height: 500px;
+   
+}
