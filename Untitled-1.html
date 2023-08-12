@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>猫の実態</title>
         <meta name="description" content="猫の好きなもの">
+        <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,10 @@
     <body>
         <header>
             <a href="https://www.google.com/">
-            <img src="bird.jpg" alt="鳥"></a>
+            <img src="bird.jpg" alt="鳥" id="birdid"></a>
             <h1>猫の一日</h1>
-            <p>ひたすら寝ています</p>
+            <p class="p1">うちの猫は</p>
+            <p class="p2">ひたすら寝ています</p>
         </header>
         <nav>
             <table border="1">
@@ -27,6 +29,11 @@
                     <td>アメリカ</td>
                 </tr>
             </table>
+            <ul>
+                <li>ミニチュアダックスフンド</li>
+                <li>ポメラニアン</li>
+                <li>柴犬</li>
+            </ul>
         </nav>
         <form action="gmail" name="aaa" method="post">
             <input type="tel" placeholder="入力してね">
@@ -42,6 +49,45 @@
             </select>
             <textarea name="cc" cols="30" rows="10">aaaaaaaaaa</textarea>
         </form>
+
+        <div class="container">
+            <div class="item">ITEM1</div>
+            <div class="item">ITEM2</div>
+            <div class="item">ITEM3</div>
+            <div class="item">ITEM4</div>
+            <div class="item">ITEM5</div>
+            <div class="item">ITEM6</div>
+            <div class="item">ITEM7</div>
+            <div class="item">ITEM8</div>
+            <div class="item">ITEM9</div>
+            <div class="item">ITEM10</div>
+            <div class="item">ITEM11</div>
+            <div class="item">ITEM12</div>
+            <div class="item">ITEM13</div>
+            <div class="item">ITEM14</div>
+            <div class="item">ITEM15</div>
+            <div class="item">ITEM16</div>
+        </div>
+
+        <div class="csscontainer">
+            <div class="item">ITEM1</div>
+            <div class="item">ITEM2</div>
+            <div class="item">ITEM3</div>
+            <div class="item">ITEM4</div>
+            <div class="item">ITEM5</div>
+            <div class="item">ITEM6</div>
+            <div class="item">ITEM7</div>
+            <div class="item">ITEM8</div>
+            <div class="item">ITEM9</div>
+            <div class="item">ITEM10</div>
+            <div class="item">ITEM11</div>
+            <div class="item">ITEM12</div>
+            <div class="item">ITEM13</div>
+            <div class="item">ITEM14</div>
+            <div class="item">ITEM15</div>
+            <div class="item">ITEM16</div>
+        </div>
+        <a href="#birdid">いいから鳥見よ</a>
     </body>
 
 
