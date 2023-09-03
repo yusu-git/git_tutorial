@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 html{
     font-size: 100%;
 }
@@ -86,8 +88,10 @@ body{
 .big-bg{
     background-size: cover;
     background-position: top center;
+    /*
     background-color: #0bd;
     background-blend-mode: lighten;
+    */
 }
 
 #news{
@@ -113,7 +117,8 @@ footer p{
 
 /*記事*/
 article{
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 
 .post-info{
@@ -144,15 +149,170 @@ article{
     margin: 0 auto;
 }
 
+.post-title{
+    font-family: "Yu Mincho","YuMincho",serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.post-title,.post-cat{
+    margin-left: 120px;
+}
+
+article image{
+    margin-bottom: 20px;
+}
+
+article p{
+    margin-bottom: 1rem;
+}
 
 /*サイドバー*/
 aside{
     width: 22%;
+    order: 3;
 }
 
+aside p{
+    padding: 12px 10px;
+}
 
 .news-contents{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+    
+}
+
+.sub-menu{
+    margin-bottom: 80px;
+    list-style: none;
+}
+
+.sub-menu li{
+    border: 1px #ddd solid;
+}
+
+.sub-menu a{
+    display: block;
+    color: #432;
+    padding: 10px;
+}
+
+.sub-menu a:hover{
+    color: #0bd;
+
+}
+
+.ad{
+    order: 1;
+}
+
+/*メニュー*/
+#menu{
+    background-image: url(../MENUimages/menu-bg.jpg);
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title{
+    text-align: center;
+}
+
+.menu-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.grid .big-box{
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+}
+
+.big-box img{
+    height: 93%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width:600px) {
+    
+    .news-contents{
+        flex-direction: column;
+    }
+
+    article,aside{
+        width: 100%;
+    }
+
+    #news .page-title{
+        margin-top: 30px;
+    }
+
+    aside{
+        margin-top: 60px;
+    }
+
+    .post-info{
+        margin-bottom: 30px;
+    }
+
+    .post-date{
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+
+    }
+    .post-date span{
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title{
+        font-size: 1.375rem;
+    }
+
+    .post-cat{
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+
+    .post-title,.post-cat{
+        margin-left: 80pxm j;
+    }
+
+    /*メニュー*/
+    .menu-content{
+        margin: 20%;
+    }
+
+
+    .big-box{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .big-box img{
+        height: auto;
+
+    }
 }
