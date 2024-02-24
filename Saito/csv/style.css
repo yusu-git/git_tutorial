@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+
+
+body{
+    width: 100vm;
+    background: url('../pic/bg-shadow.jpg') no-repeat right bottom / cover fixed;
+    text-align: center;
+}
+
+header{
+    width: 100vm;
+    height: 100vh;
+}
+
+.top-picture{
+    height: 100vh;
+    width: 80%;
+object-fit: cover;
+}
+
+article{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 400px 300px;
+}
+
+
+.article-left{
+}
+
+.article-right{
+    width: 50%;
+    height: 20px;
+    margin: 10px;
+}
+
+.grid-cover{
+    width: 100%;
+    height: 100vh;
+   
+    margin: 400px 200px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.article-right-picture{
+width: 40%;
+object-fit: cover;
+
+}
+
+.maingrid{
+    width: 110vm;
+   height: 110vh;
+    list-style: none;
+}
+.grid{
+    width: 30%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+
+}
+.grid img {
+    width: 50%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    cursor: pointer;
+}

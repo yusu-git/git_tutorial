@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>受験情報管理システム 受験地登録</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/JYUKEN/css/base.css">
+</head>
+<header style="background-color: rgb(72, 160, 160); border: 1px; padding: 20px 0; font-size: 30px; font-family:'Times New Roman', Times, serif;">受験情報管理システム</header>
+<h1>受験地登録画面</h1>
+<form action="/JYUKEN/login.html" method="post">
+<!-- <div class="loginForm"> -->
+
+<table>
+    <tr><td>受験地情報</td><td><input type="radio" name="select" value="insert">追加</td><td><input type="radio" name="select" value="update">変更</td><td><input type="radio" name="select" value="delete">削除</td></tr>
+    <tr><td>受験会場</td><td><input type="text" name="venue"></td></tr>
+    <tr><td>責任者名</td><td><input type="text" name="manager"></td></tr>
+    <tr><td>可能受験級</td><td><select name="level" id="level"><option value="03">3級</option><option value="02">２級</option><option value="01">１級</option></select></td></tr>
+
+    <tr><td>受験地登録</td></tr>
+    <tr><td>住所１</td><td><input type="text" name="address1"></td></tr>
+    <tr><td>住所２</td><td><input type="text" name="address2"></td></tr>
+    <tr><td>受験可能級</td><td>３級<input type="radio" name="level" id="level" value="level3"></td><td>２級<input type="radio" name="level" id="level" value="level2"></td><td>１級<input type="radio" name="level" id="level" value="level1"></td>
+</table>
+<input type="submit" value="実行">
+
+
+
+<!-- </div> -->
+</form>
+</html>

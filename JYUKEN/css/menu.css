@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+button{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(135, 255, 135);
+    color: coral;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 80px;
+}

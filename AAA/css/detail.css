@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body{
+    width: 100vw;
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 30px; */
+    margin: 0;
+    height: 60px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.main{
+    /* padding-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnStyle{
+    width: 80px;
+    padding: 7px;
+    background-color: bisque;
+    /* margin-left: 50px; */
+}
+
+.leftBtn{
+    margin-left: 50px;
+}
+
+.rightBtn{
+    margin-right: 50px;
+}
+
+th{
+    background-color: darkseagreen;
+}
+
+td{
+    padding-top: 10px;
+}
+
+.checkboxbis{
+    padding-right: 50px;
+}
+
+.btnSelect{
+    display: flex;
+    justify-content: space-between;
+}
+
+border,tr,th{
+    border: none;
+}

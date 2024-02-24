@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>新規作成</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/detail.css">
+
+</head>
+<body>
+    <header>
+        <div class="left">ログインユーザー名</div>
+        <div class="headTitle">詳細</div>
+    
+        <div class="right">
+            <div class="dateText">前回ログイン日時：yyyy年MM月DD日 hh:mm:ss</div>
+            <input type="button" value="ログアウト" class="logoutBtn"></div>
+        </div>
+    </header>
+    
+        <!-- <h1>名簿システム</h1> -->
+        <form action="">
+        <div class="btnSelect">
+            <div class="leftBtn">
+                <input type="button" value="戻る" class="btnStyle">
+            </div>
+            <div class="rightBtn">
+                <input type="submit" value="削除" class="btnStyle">
+                <input type="submit" value="編集" class="btnStyle">
+            </div>
+        </div>
+    <div class="main">
+        
+
+            <table border="none">
+                <tr>
+                    <th>名前</th>
+                    <td><input type="text" name="" id="" size="50"></td>
+                </tr>
+                <tr>
+                    <th>生年月日</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th>性別</th>
+                    <td>
+                        <input type="radio" name="sex" id="male">男
+                        <input type="radio" name="sex" id="female">女
+                    </td>
+                </tr>
+                <tr>
+                    <th>部署</th>
+                    <td>
+                        <select name="busyo" id="">
+                            <option value="" selected>--</option>
+                            <option value="1">総務</option>
+                            <option value="2">営業</option>
+                            <option value="3">開発</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>資格</th>
+                    <td>
+                        <input type="checkbox" name="checkboxbis" id="">簿記
+                        <input type="checkbox" name="checkboxbis" id="">基本情報
+                        <input type="checkbox" name="checkboxbis" id="">ITパスポート
+                    </td>
+                </tr>
+                <tr>
+                    <th>パスワード</th>
+                    <td><input type="password" name="password" id=""></td>
+                </tr>
+                <tr>
+                    <th>備考</th>
+                    <td><textarea name="" id="" cols="40" rows="2"></textarea></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

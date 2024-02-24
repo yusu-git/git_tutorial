@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>受験情報管理システム 受験情報登録</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/JYUKEN/css/base.css">
+</head>
+<header style="background-color: rgb(72, 160, 160); border: 1px; padding: 20px 0; font-size: 30px; font-family:'Times New Roman', Times, serif;">受験情報管理システム</header>
+<h1>受験情報登録画面</h1>
+<form action="/JYUKEN/login.html" method="post">
+<!-- <div class="loginForm"> -->
+
+<div class="center">
+<p>団体番号</p>
+<input type="text" name="centerNumber">
+
+<p>団体名</p>
+<input type="text" name="centerName">
+</div>
+
+<table>
+    <tr><td>受験地情報</td></tr>
+    <tr><td>受験県</td><td><select name="ken" id=""><option value="ibaeaki">茨城県</option></select></td></tr>
+    <tr><td>住所１</td><td><input type="text" name="address1"></td></tr>
+    <tr><td>住所２</td><td><input type="text" name="address2"></td></tr>
+    <tr><td>責任者名</td><td><input type="text" name="address2"></td></tr>
+    <tr><td>電話番号</td><td><input type="text" name="tell"></td></tr>
+</table>
+
+<table>
+    <tr><td>受験予定日</td><td><input type="text" name="address1"></td></tr>
+    <tr><td>受験級</td><td>３級<input type="radio" name="level" id="level" value="level3"></td><td>２級<input type="radio" name="level" id="level" value="level2"></td><td>１級<input type="radio" name="level" id="level" value="level1"></td>
+</table>
+
+<table>
+    <tr><th>受験者名</th><th>生年月日</th><th>性別</th><th>学年</th><th>クラス</th><th>番号</th></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+    <tr><td><input type="text" name="testerName"></td><td><input type="text" name="birthday"></td><td><input type="text" name="sex"></td><td><input type="text" name="grade"></td><td><input type="text" name="class"></td><td><input type="text" name="number"></td></tr>
+</table>
+<input type="reset" value="クリア"><input type="submit" value="実行"><button onclick="history.back()">戻る</button>
+
+
+
+<!-- </div> -->
+</form>
+</html>

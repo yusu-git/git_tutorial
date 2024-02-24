@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.tableTitle{
+    background-color: rgb(118, 176, 203);
+}
+
+.tableData{
+    background-color: azure;
+}
+
+body{
+    text-align: center;
+}

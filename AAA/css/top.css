@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.textContents{
+    padding: 0px;
+    margin: 0px;
+    /* width: 350px; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    list-style-type: none;
+}
+/* span{
+background-color: aquamarine;
+display: flex;
+    text-align: left;
+} */
+
+.loginLavel{
+    background-color: aquamarine;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+justify-content: center;  
+}
+
+.loginText{
+    background-color: aqua;
+    padding-right: 80px;
+    padding-left: 0px;
+    margin-left: 0;
+    list-style-type: none;
+}

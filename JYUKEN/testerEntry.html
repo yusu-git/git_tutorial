@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>受験情報管理システム 受験情報登録</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<form action="Logout" method="get">
+	<header style="background-color: rgb(72, 160, 160); border: 1px; padding: 20px 0; font-size: 30px; font-family:'Times New Roman', Times, serif;">
+	    <div class='header' style="display: flex; justify-content: space-between; ">受験情報管理システム
+	    <input class="button" type="submit" value="ログアウト"  style="margin-right: 15px;"></div>
+	</header>
+</form>
+<h1>受験情報登録画面</h1>
+<form action="" method="post">
+<!-- <div class="loginForm"> -->
+
+<div class="center">
+案件管理番号<input type="text" name="anknKanriNumber"><input type="button" value="表示">
+<br>
+団体名<input type="text" name="groupName">
+<br>
+団体名<input type="text" name="groupName">
+</div>
+<br>
+
+<table>
+    <tr><td>受験予定日</td><td><input type="text" name="jyuknyoteiDate"></td></tr>
+    <tr><td>受験級</td><td>３級<input type="radio" name="level" id="level" value="03"></td><td>２級<input type="radio" name="level" id="level" value="02"></td><td>１級<input type="radio" name="level" id="level" value="01"></td>
+    <tr><td>受験予定人数</td><td><input type="text" name="jyuknyoteiNunzu"></td></tr>
+</table>
+
+<table>
+    <tr><th>受験者確定処理</ｔh><th>名前</ｔh><th>性別</ｔh><th>学年</ｔh><th>クラス</ｔh><th>番号</ｔh></tr>
+    <tr><td>受験級</td><td>３級<input type="radio" name="level" id="level" value="03"></td><td>２級<input type="radio" name="level" id="level" value="02"></td><td>１級<input type="radio" name="level" id="level" value="01"></td>
+    <tr><td>受験予定人数</td><td><input type="text" name="jyuknyoteiNunzu"></td></tr>
+</table>
+
+<input type="reset" value="クリア"><input type="submit" value="実行"></form>
+<form action="planEntry" method="get"><button name="back" value="back">戻る</button></form>
+
+
+
+<!-- </div> -->
+
+</html>

@@ -67,93 +67,46 @@ thumbImages.forEach((thumbImage)=>{
 });
 
 /*
-スライドメニュ
+スライドメニュー
 ================================================ */
 /* ----- ↓↓ 追加 ↓↓ ----- */
 const menuOpen = document.querySelector('#menu-open');
 const menuClose = document.querySelector('#menu-close');
 const menuPanel = document.querySelector('#menu-panel');
 const menuItems = document.querySelectorAll('#menu-panel li');
-
-menuOpen.addEventListener('click',()=>{
-
-  //console.log('開く');
-  menuPanel.animate({translate:['100vw' , 0]},{
-    duration:1400,
-    easing:'ease',
-    fill:'forwards',
-  })
-
-
-
-  menuItems.forEach((menuItems,index)=>{
-    menuItems.animate({opacity:[0,1],translate:['2rem' , 0],
-  },
-    {
-      duration:2400,
-      delay:300*index,
-      easing:'ease',
-      fill:'forwards',
-    }
-    );
-
-  })
-
-
-
-
-})
-
-menuClose.addEventListener('click',()=>{
-
-  //console.log('開く');
-  menuPanel.animate({translate:[0 , '100vw'],
-},{
-    duration:1400,
-    easing:'ease',
-    fill:'forwards',
-  })
-
-
-  menuItems.forEach((menuItems,index)=>{
-    menuItems.animate({opacity:[0,1],translate:['2rem' , 0],
-  },
-    {
-      duration:1200,
-      delay:300*index,
-      easing:'ease',
-      fill:'forwards',
-    }
-    );
-  })
-  
-});
-
-
-
-
-const animateFade = (entry,obs)=> {
-  entry.forEach((entry)=>{
-    if(entry.isIntersecting){
-      entry.target.animate({
-        opacity:[0,1],
-        translate:['0 4rem',0]
-      },{duration:2000,
-        fill:'forwards',
-        easing:'ease',
-      })
-      obs.unobserve(entry.target);
-    }
-
-  });
-
+const menuOptions = {
+  duration: 1400,
+  easing: 'ease',
+  fill: 'forwards',
 };
 
-const fadeObserver = new IntersectionObserver(animateFade);
+// メニューを開く
+menuOpen.addEventListener('click', () => {
+  menuPanel.animate({translate: ['100vw', 0]}, menuOptions);
 
-const fadeElements = document.querySelectorAll('.fadein');
-
-fadeElements.forEach((fadeElements) =>{
-  fadeObserver.observe(fadeElements);
-
+  // リンクをひとつずつ順に表示
+  menuItems.forEach((menuItem, index) => {
+    //console.log(`${index}番目のリスト`);
+    menuItem.animate(
+      {
+        opacity: [0, 1],
+        translate: ['2rem', 0],
+      },
+      {
+        duration: 2400,
+        delay: 300 * index,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+    );
+  });
 });
+
+// メニューを閉じる
+menuClose.addEventListener('click', () => {
+  menuPanel.animate({translate: [0, '100vw']}, menuOptions);
+  menuItems.forEach((menuItem) => {
+    menuItem.animate({opacity: [1, 0]}, menuOptions);
+  });
+});
+/* ----- ↑↑ 追加 ↑↑ ----- */

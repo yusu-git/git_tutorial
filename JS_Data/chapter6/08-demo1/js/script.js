@@ -9,4 +9,5 @@ const options = {
   easing: 'ease',
 };
 
+alert("");
 heading.animate(keyframes, options);

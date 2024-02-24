@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body{
+    width: 100vw;
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 30px; */
+    margin: 0;
+    height: 60px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.searchCondition{
+    display: flex;
+    justify-content: center;
+}
+
+.left,.headTitle{
+    padding: 20px 30px; 
+}
+
+.dateText{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.logoutBtn{
+    /* padding-left: 20px; */
+    margin-left: 200px;
+}
+
+
+.searchAnser{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+
+.searchTable{
+    border-collapse: collapse;
+}
+
+.number{
+    text-align: right;
+}
+
+.tableSex{
+    /* padding-left: 30px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchTableTitle{
+    background-color: lightcyan;
+}
+
+.btnSelect{
+    display: flex;
+    justify-content: space-between;
+}
+
+border,tr,th{
+    border: none;
+}
+
+.leftBtn{
+    margin-left: 50px;
+}
+
+.rightBtn{
+    margin-right: 50px;
+}
+
+.btnStyle{
+    width: 80px;
+    padding: 7px;
+    background-color: bisque;
+}

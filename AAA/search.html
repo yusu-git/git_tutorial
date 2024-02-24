@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>新規作成</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/search.css">
+<script src="/AAA/js/search.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="left">ログインユーザー名</div>
+        <div class="headTitle">検索一覧</div>
+    
+    <div class="right">
+        <div class="dateText">前回ログイン日時：yyyy年MM月DD日 hh:mm:ss</div>
+        <input type="button" value="ログアウト" class="logoutBtn"></div>
+    </div>
+</header>
+    
+        <!-- <h1>名簿システム</h1> -->
+    
+        <form action="">
+            <div class="btnSelect">
+                <div class="leftBtn">
+                    <input type="button" value="戻る" class="btnStyle">
+                </div>
+                <div class="rightBtn">
+                    <input type="submit" value="検索" class="btnStyle" id="searchBtn">
+                </div>
+            </div>
+
+
+    <div class="searchCondition">
+            <table>
+                <tr>
+                    <td>名前</td>
+                    <td  colspan="3"><input type="text" name="" id="name" size="50"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>生年月日</td>
+                    <td><input type="text" name="" id="birthFrom"></td>
+                    <td>～</td>
+                    <td><input type="text" name="" id="birthTo"></td>
+                </tr>
+                <tr>
+                    <td>性別</td>
+                    <td class="tableSex" colspan="2">
+                        <input type="radio" name="sex" id="male">男
+                        <input type="radio" name="sex" id="female">女
+                        <input type="radio" name="sex" id="none">なし
+                    </td>
+                    <td></td><td></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+
+
+
+    <div class="searchAnser">
+        <form action="">
+
+            <table border="1" class="searchTable">
+                <tr class="searchTableTitle">
+                    <th>番号</th>
+                    <th width="240px" class="name">名前</th>
+                    <th>生年月日</th>
+                    <th>性別</th>
+                    <th>部署</th>
+                    <th>編集</th>
+                </tr>
+                <tr>
+                    <td class="number">7</td>
+                    <td>テスト太郎</td>
+                    <td>1989年4月12日</td>
+                    <td>男</td>
+                    <td>開発</td>
+                    <td><input type="button" value="詳細"></td>
+                </tr>
+                <tr>
+                    <td class="number">12</td>
+                    <td>テスト花子</td>
+                    <td>1995年9月20日</td>
+                    <td>女</td>
+                    <td>総務</td>
+                    <td><input type="button" value="詳細"></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -46,6 +46,10 @@ img {
     transition: .4s;
 }
 
+.fadein{
+    opacity: 0;
+}
+
 /*
 LAYOUT
 ================================================ */
@@ -216,6 +220,7 @@ GALLERY
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
     margin: 1rem 0;
+    background-color:#63dbd0 ;
 }
 .gallery-thumbnails img {
     aspect-ratio: 3/4;
